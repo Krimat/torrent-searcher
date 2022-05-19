@@ -1,1 +1,1 @@
-web: gunicorn torrent_search.wsgi
+web: gunicorn torrent_searcher.wsgi
