@@ -28,7 +28,7 @@ DEBUG = environ.get("DEBUG", True)
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'dashboard.heroku.com/apps/torrent-search-proj'
+    'torrent-search-proj.herokuapp.com',
 ]
 
 
