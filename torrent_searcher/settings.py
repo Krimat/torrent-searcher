@@ -27,7 +27,8 @@ SECRET_KEY = environ.get('SECRET_KEY', 'django-insecure-@t!x&ny+^zme$1@0uhf@oa)1
 DEBUG = environ.get("DEBUG", True)
 
 ALLOWED_HOSTS = [
-    '127.0.0.1'
+    '127.0.0.1',
+    'dashboard.heroku.com/apps/torrent-search-proj'
 ]
 
 
