@@ -1,0 +1,9 @@
+{
+  "pirate_bay": {
+    "prefix":"https://thepiratebay10.org/search/",
+    "suffix": "/1/7/0"
+  },
+  "1337x": {
+    "prefix":"https://1337x.to/search/"
+  }
+}
