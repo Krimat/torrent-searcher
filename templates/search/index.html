@@ -15,16 +15,36 @@
     </title>
 </head>
 <body>
+    {% block navigation %}
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'search:index' %}">Home page</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    {% endblock %}
+
     {% block sidebar %}
 
     {% endblock %}
     {% block content %}
-        <form action="" method="get" name="search-word" class="input-group">
+        <div class="d-flex justify-content-center p-5">
+            <div>
 
-            {{ form }}
-            <input type="button" value="search">
-        </form>
+                <form action="" method="get" name="search-word" class="input-group">
+                    {{ form }}
+                    <button class="btn btn-outline-primary" type="button">Search</button>
+                </form>
+            </div>
+
+        </div>
+
+
         <ul>
+        {{ data }}
             {% for obj in data %}
                 <li><a href="{{ obj.link }}">{{ obj.title }}</a>
                 </li>
